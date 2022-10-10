@@ -4,10 +4,37 @@
     box-sizing: border-box;
 }
 
+/* header com logo */
+
 header{
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 101px;
+}
+
+/* Banner principal */
+
+.top-banner-desktop{
+    width: 100%;
+}
+
+.top-banner-mobile{
+    display: none;
+    max-height: 598px;
+    object-fit: cover;
+}
+
+/* Banner pincipal mobile */
+
+@media screen and (max-width:768px) {
+    .top-banner-desktop{
+        display: none;
+    }
+
+    .top-banner-mobile{
+        display: unset;
+        width: 100%;
+    }
 }
