@@ -89,6 +89,21 @@ header{
     text-align: center;
 }
 
+.middle-banner{
+    background-color: #E0E0E0;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 39px;
+    padding: 0 72px;
+    justify-content: center;
+    position: relative;
+}
+
+.middle-banner img{
+    bottom: -60px;
+    max-width: 100%;
+}
+
 /* Banner pincipal mobile */
 
 @media screen and (max-width:768px) {
