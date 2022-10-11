@@ -58,8 +58,9 @@ header{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    max-width: 766px;
+    max-width: 54%;
     padding: 28px 0 73px;
+    margin: 0 auto;
 }
 
 
@@ -73,5 +74,24 @@ header{
     .top-banner-mobile{
         display: unset;
         width: 100%;
+    }
+
+    .info-section h2{
+        max-width: unset;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .info-section h1{
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .info-section p{
+        max-width: unset;
+        padding: 12px 28px 65px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
     }
 }
