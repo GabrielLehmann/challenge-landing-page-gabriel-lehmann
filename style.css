@@ -133,6 +133,33 @@ header{
     line-height: 24px;
 }
 
+/* bottom banner */
+
+.bottom-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-banner h2{
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.bottom-banner p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 550px;
+    padding-bottom: 50px;
+}
+
+.bottom-banner img{
+    max-width: 1360px;
+    max-height: 276px;
+}
+
 /* Banner pincipal mobile */
 
 @media screen and (max-width:768px) {
