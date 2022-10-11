@@ -100,8 +100,37 @@ header{
 }
 
 .middle-banner img{
-    bottom: -60px;
+    position: relative;
+    bottom: -62px;
     max-width: 100%;
+}
+
+/* bottom cards */
+
+.bottom-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 191px 72px 108px;
+    gap: 16px;
+}
+
+.bottom-cards-box{
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(432px,90vw);
+    max-height: 332px;
+    padding: 35px 32px 65px 33px;
+    gap: 16px;
+}
+
+.bottom-cards-box p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* Banner pincipal mobile */
