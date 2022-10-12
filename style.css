@@ -96,12 +96,11 @@ header{
     gap: 39px;
     padding: 0 72px;
     justify-content: center;
-    position: relative;
 }
 
 .middle-banner img{
     position: relative;
-    bottom: -62px;
+    top: 62px;
     max-width: 100%;
 }
 
@@ -158,6 +157,30 @@ header{
 .bottom-banner img{
     max-width: 1360px;
     max-height: 276px;
+    margin-bottom: 112px;
+}
+
+footer{
+    background-color: #000000;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer p{
+    font-size: 10px;
+    line-height: 12px;
+    color: #BDBDBD;
 }
 
 /* Banner pincipal mobile */
