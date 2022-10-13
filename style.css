@@ -63,6 +63,11 @@ header{
     margin: 0 auto;
 }
 
+.info-section img{
+    width: 100%;
+    max-width: 315px;
+}
+
 /* top cards */
 
 .top-cards{
@@ -91,17 +96,26 @@ header{
 
 .middle-banner{
     background-color: #E0E0E0;
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 39px;
     padding: 0 72px;
-    justify-content: center;
+}
+
+.middle-banner div{
+    display: flex;
+    gap: 39px;
 }
 
 .middle-banner img{
     position: relative;
     top: 62px;
-    max-width: 100%;
+    width: 29.48vw;
+}
+
+.middle-banner > img{
+    max-width: calc(33% -78px);
 }
 
 /* bottom cards */
@@ -121,7 +135,7 @@ header{
     align-items: center;
     justify-content: center;
     width: min(432px,90vw);
-    max-height: 332px;
+    min-height: 332px;
     padding: 35px 32px 65px 33px;
     gap: 16px;
 }
@@ -141,6 +155,7 @@ header{
 }
 
 .bottom-banner h2{
+    font-weight: 600;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -150,15 +165,21 @@ header{
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    width: 550px;
-    padding-bottom: 50px;
+    max-width: 550px;
+    padding-bottom: 87px;
 }
 
-.bottom-banner img{
-    max-width: 1360px;
+.bottom-banner-desktop{
+    max-width:min(1360px, 70vw);
     max-height: 276px;
     margin-bottom: 112px;
+    width: 100%;
 }
+
+.bottom-banner-mobile{
+    display: none;
+}
+
 
 footer{
     background-color: #000000;
@@ -183,9 +204,56 @@ footer p{
     color: #BDBDBD;
 }
 
-/* Banner pincipal mobile */
+@media screen and (max-width: 1024px){
+
+    /* top card mobile  */
+
+    .top-cards{
+        flex-direction: column;
+        margin: 0 32px;
+    }
+
+/* middle banner */
+
+    .middle-banner{
+        flex-direction: column;
+        padding: 0 23px;
+        gap: 24px;
+    }
+
+    .middle-banner > img{
+        max-width: unset;
+        width: 100%;
+    }
+
+    .middle-banner div{
+        flex-direction: row-reverse;
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .middle-banner div > img{
+        max-width: calc(50% - 7px);
+        width: unset;
+    }
+
+/* bottom cards mobile */
+
+    .bottom-cards{
+        flex-direction: column;
+    }
+
+    /* bottom banner mobile */
+
+    .bottom-banner-text{
+        padding: 0 32px;
+}
+}
 
 @media screen and (max-width:768px) {
+
+    /* top banner mobile */
+
     .top-banner-desktop{
         display: none;
     }
@@ -216,10 +284,37 @@ footer p{
         text-align: center;
     }
 
+    .info-section img{
+        max-width: 239px;
+    }
+
 /* top card mobile  */
 
     .top-cards{
         flex-direction: column;
+        padding: 0 32px;
     }
+
+/* bottom banner mobile */
+
+.bottom-banner-text{
+    padding: 0 32px;
+}
+
+.bottom-banner-desktop{
+    display: none;
+}
+
+.bottom-banner-mobile{
+    display: unset;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* footer mobile */
+
+footer p{
+    max-width: 63.04%;
+}
 
 }
